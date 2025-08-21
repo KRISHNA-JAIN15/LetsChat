@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5000
 // const __dirname = path.resolve()
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://lets-chat-ivory.vercel.app', 'http://localhost:5173'],
+  origin: ['http://localhost:3000', 'https://lets-chat-ivory.vercel.app', 'http://localhost:5173', 'https://letsmeet.krishnajain.tech'],
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"]
 }));
