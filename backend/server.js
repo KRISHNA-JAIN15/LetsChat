@@ -25,6 +25,10 @@ app.use(cors({
 app.use(express.json()) // Middleware to parse JSON requests
 app.use(cookieParser()) // Middleware to parse cookies
 
+// On your Express backend
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
 
 app.use("/api/auth", authRoutes)
 app.use("/api/messages", messageRoutes)
