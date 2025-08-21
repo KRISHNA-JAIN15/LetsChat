@@ -14,6 +14,7 @@ const useLogin = () => {
 			const res = await fetch("https://letschat-t1b2.onrender.com/api/auth/login", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
+				credentials: 'include',
 				body: JSON.stringify({ username, password }),
 			});
 

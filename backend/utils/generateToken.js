@@ -5,7 +5,7 @@ const generateTokenAndSetCookie = (userId , res) => {
     res.cookie("jwt" , token , {
         httpOnly: true, // Prevents client-side JavaScript from accessing the cookie
         maxAge : 15 * 24 * 60 * 60 * 1000, // 15 days
-        sameSite: "Strict", // Controls whether cookies are sent with cross-site requests
+        sameSite: "None", // Allow cross-site requests
         secure : process.env.NODE_ENV !== "development"
     });
 }
