@@ -16,7 +16,7 @@ export const SocketContextProvider = ({ children }) => {
     useEffect(() => {
         if (authUser) {
             // Change this line to connect to your local backend
-            const socket = io("http://localhost:5000", {
+            const socket = io("https://letschat-t1b2.onrender.com", {
                 query: {
                     userId: authUser._id,
                 },

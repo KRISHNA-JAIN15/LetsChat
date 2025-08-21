@@ -12,12 +12,12 @@ import connectToMongoDB from "./db/connectToMongoDB.js"
 dotenv.config()
 
 import {app , server} from './socket/socket.js' // Import the socket app
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 5000
 
 // const __dirname = path.resolve()
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://lets-chat-murex.vercel.app'],
+  origin: ['http://localhost:3000', 'https://lets-chat-ivory.vercel.app'],
   credentials: true
 }));
 
